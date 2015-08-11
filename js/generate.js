@@ -193,7 +193,7 @@ function generate() {
 	}
 	for(var i = 0; i < custom_num; ++i) { //32 chars
 		var k = i * step;
-		sum = get_sum(k, k + 7) * (32 - i);
+		sum = get_sum(k, k + 7) * (custom_num - i);
 		sum %= P;
 		var adding = key_map.charAt(sum);
 		if(!type[get_type(adding)]) {
