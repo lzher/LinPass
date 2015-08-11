@@ -11,17 +11,25 @@
     </head>
 	<body>
 		<p>
-			Key Map: <input id="key_map" value="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*" style="width: 30%" />
+			Key Map: <input id="key_map" value="JG5$2cpNB%U0nM&Y4TqkfvFubV9w1I8XECDRm#aOLQ!eWtASysiKj7xgH*o6hdP@3lZ^rz" style="width: 30%" />
 			<button onclick="rand_map()">Random Map</button>
 		</p>
-		<p>Pass: <input id="pass" style="width: 30%" /></p>
+		<p>Pass: <input type="password" id="pass" style="width: 30%" /></p>
 		<p>Salt: <input id="salt" style="width: 30%" /></p>
+		<p>Custom number:(<32) <input type="number" id="custom_num" style="width: 10%" value="16" /></p>
+		<p>
+			<input type="checkbox" id="upper" checked="checked">Upper case</input>
+			<input type="checkbox" id="lower" checked="checked">Lower case</input>
+			<input type="checkbox" id="digit" checked="checked">Digit</input>
+			<input type="checkbox" id="symbol" checked="checked">Symbol</input>
+		</p>
+		<p><button id="generate" onclick="generate()">Generate</button></p>
 		<p>Result:<span id="result_debug"></span></p>
 		<p>8 chars: <input id="res_8" onmousemove="this.focus();this.select();" placeholder="NONE" style="width: 30%" /></p>
 		<p>16 chars: <input id="res_16" onmousemove="this.focus();this.select();" placeholder="NONE" style="width: 30%" /></p>
 		<p>20 chars: <input id="res_20" onmousemove="this.focus();this.select();" placeholder="NONE" style="width: 30%" /></p>
 		<p>32 chars: <input id="res_32" onmousemove="this.focus();this.select();" placeholder="NONE" style="width: 30%" /></p>
-		<p><button id="generate" onclick="generate()">Generate</button></p>
+		<p>Custom chars: <input id="res_custom" onmousemove="this.focus();this.select();" placeholder="NONE" style="width: 30%" /></p>
 		<p id="map_history">Map History:<br /></p>
 		<script>
 			$('body').on('keydown', function(event) {
