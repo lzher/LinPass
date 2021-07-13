@@ -18,7 +18,7 @@
 
 ### LinPass简介
 
-自己写了一个简陋的密码工具"**LinPass**"用来改善以上问题,测试地址:[http://www.lxpark.com/pass/](http://www.lxpark.com/pass/)
+自己写了一个简陋的密码工具"**LinPass**"用来改善以上问题,测试地址: https://lzher.github.io/LinPass/
 
 ![加载失败](http://7xibux.com1.z0.glb.clouddn.com/QQ图片20150811120229.png)
 
